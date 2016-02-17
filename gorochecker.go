@@ -72,6 +72,7 @@ func filterSystemRoutines(gs []*Goroutine) []*Goroutine {
 		"testing.RunTests":      struct{}{},
 		pkgName + ".parseStack": struct{}{},
 		"signal.loop":           struct{}{},
+		"runtime.goexit":        struct{}{},
 	}
 
 	var out []*Goroutine
